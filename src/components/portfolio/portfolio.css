@@ -1,0 +1,59 @@
+.portfolio__container {
+    grid-template-columns: repeat(2,max-content);
+    gap: 5rem;
+    justify-items: center;
+    justify-content: center;
+}
+
+.portfolio__content {
+    justify-content: center;
+}
+
+.work__img {
+    width: 350px;
+    padding: 3px;
+    margin-bottom: 30px;
+}
+
+.work__button {
+    color: rgb(24, 23, 23);
+}
+
+
+
+.work__card1 {
+    margin-bottom: 50px;
+}
+
+
+/* ========================  BREAK POINTS ===========================  */
+/* LARGE DEVICES */
+@media screen and (max-width: 992px) {
+    .portfolio__container {
+     grid-template-columns: max-content;
+     row-gap: 2rem;
+    }
+   }
+   
+   /* MEDIUM DEVCES */
+   @media screen and (max-width: 576px) { 
+     .portfolio__container {
+         grid-template-columns: 1fr;
+     }
+ 
+     .portfolio__content {
+         padding: 1.5rem;
+     }
+   }
+   
+   /* SMALL DEVCES */
+   @media screen and (max-width: 350px) { 
+    .work__content {
+     column-gap: 1.25rem;
+    }
+ 
+    .work__button {
+     font-size: var(--small-font-size);
+    }
+   }
+   
